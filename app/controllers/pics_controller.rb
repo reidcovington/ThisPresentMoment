@@ -7,9 +7,17 @@ class PicsController < ApplicationController
   end
 
   def new
+    @pic = Pic.new
   end
 
   def create
+    @pic = Pic.new(pic_params)
+
+    if @pic.save
+      redirect_to action: 'index'
+    else
+      render action: 'new', alert: 'User could not be created'
+    end
   end
 
   def show
@@ -22,5 +30,10 @@ class PicsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+  def pic_params
+       params.require(:pic).permit(:image, :location)
   end
 end

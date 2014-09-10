@@ -1,8 +1,17 @@
+.pic-container {
+    background-color: rgba(221, 234, 253, .5);
+    max-height: 1200px;
+    max-width: 920px;
+    margin: 2rem auto;
+    /*border: 2px solid rgba(24, 9, 112, .5);*/
+    border-radius: 1rem;
+    /*padding: 2rem 1rem;*/
+}
 .name {
     height: auto;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(150, 192, 253, .7);
-    margin: 0 auto 2rem;
+    margin: 0 auto .5rem;
     border-radius: 5px;
     font-size: 1rem;
     padding: 1rem;
@@ -11,6 +20,25 @@
 }
 .name span {
     font-weight: bold;
+    font-family: "Comic Sans MS";
+}
+.pic-row {
+    display: inline-block;
+    /*margin-left: 2rem;*/
+}
+.pic-holder {
+    display: inline-block;
+    /*margin: 0 0 1rem 1rem;*/
+}
+.pic-frame {
+    max-width: 300px;
+    max-height: 300px;
+    /*margin: 2px;*/
+}
+.pic-frame img{
+    max-height: 300px;
+    max-width: 300px;
+    /*border-radius: 17px;*/
 }
 .add-pic{
     height: 2.5rem;
@@ -18,42 +46,13 @@
     color: rgba(255, 255, 255, 1);
     /*background-color: rgba(100, 225, 100, 1);*/
     text-align: center;
+    font-family: "Comic Sans MS";
     width: 15rem;
     margin: 3rem auto 0;
     border-radius: 5px;
     line-height: 2.3rem;
     font-size: 2rem;
     padding: .1rem;
-}
-.pic-container {
-    background-color: rgba(221, 234, 253, .5);
-    max-height: 900px;
-    width: 920px;
-    margin: 2rem auto;
-    border: 2px solid rgba(170, 255, 170, .5);
-    border-radius: 1rem;
-    padding: 2rem 1rem;
-}
-.pic-frame {
-    max-width: 300px;
-    max-height: 300px;
-}
-.pic-frame img{
-    max-height: 250px;
-    max-width: 250px;
-    padding: 10px;
-    border-radius: 17px;
-}
-.pic-holder {
-    display: inline-block;
-    margin: 0 0 1rem 1rem;
-}
-.pic-row {
-    display: inline-block;
-    margin-left: 2rem;
-}
-.second-row{
-    margin-top: 1.5rem;
 }
 
 

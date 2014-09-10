@@ -3,7 +3,7 @@ class CreatePics < ActiveRecord::Migration
     create_table :pics do |t|
       t.belongs_to :user
       t.string :location
-      t.attatchment :image
+      t.attachment :image
 
       t.timestamps
     end
