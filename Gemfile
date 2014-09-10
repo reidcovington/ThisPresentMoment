@@ -38,3 +38,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use PaperClip to save images
+gem "paperclip", "~> 4.1.1"
+

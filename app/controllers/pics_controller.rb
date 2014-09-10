@@ -1,5 +1,9 @@
 class PicsController < ApplicationController
+  respond_to :html
+
   def index
+    @pics = Pic.order("created_at desc")
+    respond_with @pics
   end
 
   def new
