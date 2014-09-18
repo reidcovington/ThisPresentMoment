@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
 
   # Pics
+  get '/pics/new_pictures', to: 'pics#new_pictures'
   resources :pics
 
   # Root

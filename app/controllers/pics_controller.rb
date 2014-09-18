@@ -32,6 +32,15 @@ class PicsController < ApplicationController
   def destroy
   end
 
+  def new_pictures
+    @new_pics = Pic.where(:created_at => (Time.now - 1.minute)..Time.now)
+    # @all_pics = Pic.order("created_at desc")
+    p @new_pics.to_json
+    p "here"
+
+    render :json => @new_pics.to_json(:only => [:location], :methods => [:image_url])
+  end
+
   private
   def pic_params
        params.require(:pic).permit(:image, :location)

@@ -31,13 +31,15 @@
     /*margin: 0 0 1rem 1rem;*/
 }
 .pic-frame {
+  display: inline-block;
     max-width: 300px;
     max-height: 300px;
     /*margin: 2px;*/
 }
 .pic-frame img{
-    max-height: 300px;
-    max-width: 300px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
     /*border-radius: 17px;*/
 }
 .add-pic{

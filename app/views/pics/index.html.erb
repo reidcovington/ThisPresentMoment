@@ -4,14 +4,16 @@
       </center>
         <center>
             <div class="pic-row">
-                <div class="pic-holder">
+                <div data-new-pics class="pic-holder">
+
+                        <% @pics.each do |pic| %>
                         <div class="pic-frame">
-                          <img src="/assets/cats.jpg" alt="cats">
+                          <%= image_tag pic.image.url %>
                         </div>
+                        <% end %>
                 </div>
-                <div class="pic-holder">
+                <!-- <div class="pic-holder">
                         <div class="pic-frame">
-                          <img src="/assets/cats.jpg" alt="cats">
                         </div>
                 </div>
                 <div class="pic-holder">
@@ -48,7 +50,7 @@
                         <div class="pic-frame">
                           <img src="/assets/cats.jpg" alt="cats">
                         </div>
-                </div>
+                </div> -->
             </div>
         </center>
         <a href="/pics/new"><div data-add-pic class="button-blue add-pic">Add Moment</div></a><br><br>
