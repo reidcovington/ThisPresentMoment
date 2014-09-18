@@ -10,11 +10,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <button class="button-blue"><%= f.submit %></button>
-  </div>
-<% end %>
+
+<div class="pic-container">
+        <center>
+        <div class="name"><span>This Present Moment</span> </div>
+      </center>
+        <center>
+            <div class="pic-row">
+                <div data-new-pics class="pic-holder">
+                  <br>
+                        <%= f.file_field :image %>
+                      <div class="actions">
+                        <%= f.submit 'Share Moment', :class => 'button-blue add-pic' %>
+                      </div>
+                    <% end %>
+                </div>
+            </div>
+        </center><br><br>

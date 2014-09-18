@@ -1,7 +1,7 @@
 .pic-container {
     background-color: rgba(221, 234, 253, .5);
-    max-height: 1200px;
-    max-width: 920px;
+    height: auto;
+    max-width: 905px;
     margin: 2rem auto;
     /*border: 2px solid rgba(24, 9, 112, .5);*/
     border-radius: 1rem;
@@ -34,7 +34,8 @@
   display: inline-block;
     max-width: 300px;
     max-height: 300px;
-    /*margin: 2px;*/
+    margin: .5px;
+    float: left;
 }
 .pic-frame img{
     display: inline-block;
@@ -57,6 +58,20 @@
     padding: .1rem;
 }
 
+.field {
+    height: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(100, 225, 100, 1);*/
+    text-align: center;
+    font-family: "Comic Sans MS";
+    width: 15rem;
+    /*margin: 3rem auto 0;*/
+    border-radius: 5px;
+    line-height: 2.3rem;
+    font-size: 2rem;
+    padding: .1rem;
+}
 
 
 
