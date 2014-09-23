@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Pics
   get '/pics/new_pictures', to: 'pics#new_pictures'
+  get '/pics/share', to: 'pics#share'
   resources :pics
 
   # Root
