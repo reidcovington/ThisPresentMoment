@@ -39,7 +39,6 @@ class PicsController < ApplicationController
     @new_pics = Pic.all.sample(9)
     # @all_pics = Pic.order("created_at desc")
     p @new_pics.to_json
-    p "here"
 
     render :json => @new_pics.to_json(:only => [:location], :methods => [:image_url])
   end
