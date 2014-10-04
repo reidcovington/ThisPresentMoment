@@ -9,16 +9,13 @@
 
 <div class="pic-container">
         <center>
-        <div class="name"><span>This Present Moment</span> </div>
-      </center>
-        <center>
             <div class="pic-row">
                 <div data-new-pics class="pic-holder">
                   <br>
                   <div class="single-pic-frame">
                     <%= image_tag @pic.image.url %>
                   </div>
-                    <div class="name"><span>Location: <%= @pic.location %></span> </div><br><br>
+                    <div class="nav"><span>Location: <%= @pic.location %></span> </div><br><br>
                       <a href='/pics' class='button-blue add-pic'> More Moments
                       </a>
                 </div>

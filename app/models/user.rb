@@ -5,10 +5,10 @@ class User < ActiveRecord::Base
   # validates :password, presence: true
   has_many :pics
 
-  # has_secure_password
+  has_secure_password
 
-  # def self.find_and_auth email, password
-  #   user = User.find_by_email(email)
-  #   user && user.authenticate(password) ? user : nil
-  # end
+  def self.find_and_auth email, password
+    user = User.find_by_email(email)
+    user && user.authenticate(password) ? user : nil
+  end
 end

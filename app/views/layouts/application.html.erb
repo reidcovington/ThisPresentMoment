@@ -8,6 +8,18 @@
   <%= yield :head %>
 </head>
 <body>
+<br><center>
+<div class="nav"><span>This Present Moment</span>
+    <% if session[:user_id] %>
+      <%= render "users/userin" %>
+    <% else %>
+      <%= render "users/nouser" %>
+    <% end %>
+  </div>
+  </center>
+
+<center id='login-modal' style="display: none"><%= render 'users/login' %></center>
+<center id='signup-modal' style="display: none"><%= render 'users/signup' %></center>
 
 <%= yield %>
 

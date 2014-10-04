@@ -14,7 +14,7 @@ class PicsController < ApplicationController
 
   def create
     @pic = Pic.new(pic_params)
-
+    @pic.user_id = session[:user_id]
     if @pic.save
       redirect_to action: 'share'
     else
@@ -44,7 +44,7 @@ class PicsController < ApplicationController
   end
 
   def share
-    @pic = Pic.order("created_at desc").first
+    @pic = Pic.where.not(user_id: session[:user_id]).sample
   end
 
   private

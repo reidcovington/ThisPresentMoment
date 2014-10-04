@@ -1,4 +1,16 @@
 $( document ).ready(function() {
+    $('#signup').on("click", function(e) {
+       e.preventDefault();
+       $('#login-modal').hide();
+       $('#signup-modal').show();
+    })
+
+    $('#login').on("click", function(e) {
+        e.preventDefault();
+        $('#signup-modal').hide();
+        $('#login-modal').show();
+     });
+
     setInterval(function (){
         $('[data-old-pics]').hide();
         $.get('/pics/new_pictures').done(function(response){
@@ -7,7 +19,7 @@ $( document ).ready(function() {
                 $('[data-new-pic-' + i + ']').html('<img src="' + new_pictures[i].image_url +'"></div>'  )
             }
         });
-    }, 30000)
+    }, 30000);
 });
 
 // $( ".single-pic-frame" ).load(function() {

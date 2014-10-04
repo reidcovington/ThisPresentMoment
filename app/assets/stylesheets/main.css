@@ -7,8 +7,9 @@
     border-radius: 1rem;
     /*padding: 2rem 1rem;*/
 }
-.name {
-    height: auto;
+.nav {
+    height: 1rem;
+    max-width: 905px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(150, 192, 253, .7);
     margin: 0 auto .5rem;
@@ -18,9 +19,19 @@
     line-height: 1.25rem;
     letter-spacing: 1px;
 }
-.name span {
+.nav span {
+    float: left;
     font-weight: bold;
     font-family: "Comic Sans MS";
+}
+.right{
+    float: right;
+    display: inline-flex;
+    list-style-type: none
+
+}
+.right li{
+    padding-right: 1rem;
 }
 .pic-row {
     display: inline-block;
@@ -41,7 +52,7 @@
     display: inline-block;
     height: 300px;
     width: 300px;
-    /*border-radius: 17px;*/
+    border-radius: 5px;
 }
 .single-pic-frame {
     display: inline-block;
@@ -70,7 +81,6 @@
     font-size: 2rem;
     padding: .1rem;
 }
-
 .field {
     height: 2.5rem;
     font-weight: bold;
@@ -85,9 +95,30 @@
     font-size: 2rem;
     padding: .1rem;
 }
-
-
-
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.modal-text {
+    position: fixed;
+    font-family: "Comic Sans MS";
+    background-color: rgba(255, 255, 255, 1);
+    right: 25%;
+    bottom: 25%;
+    left: 25%;
+    border-radius: 25px;
+    padding: 1rem;
+}
+.form-control {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    width: 15em;
+    border-radius: 5px;
+}
 
 
 
